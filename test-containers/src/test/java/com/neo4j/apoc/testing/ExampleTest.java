@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ExampleTest {
 
     @Container
-    private static final Neo4jContainer<?> neo4jContainer = new Neo4jContainer<>("neo4j:4.0")
+    private static final Neo4jContainer<?> neo4jContainer = new Neo4jContainer<>("neo4j:4.2")
             .withAdminPassword(null)
             .withPlugins(MountableFile.forClasspathResource(String.format("/apoc-%s-all.jar", apocVersion())));
 
